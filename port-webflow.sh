@@ -27,6 +27,7 @@ for file in *.html; do
   sed -i -e 's/<link href=".\/'$filename'_files\//<link href=".\/css\//g' './'$file
   sed -i -e 's/href="\/'$filename'/href="/g' './'$file
   sed -i -e 's/href="#" id="wealth-logo"/href="\/" id="wealth-logo"/g' './'$file
+  sed -i -e 's/href="\/#"/href="#"/g' './'$file
 done
 
 # Backups
